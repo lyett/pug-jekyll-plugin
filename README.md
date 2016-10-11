@@ -6,13 +6,16 @@ Converter Plugin that brings Pug support to the [Jekyll blog-aware, static site 
 ## HOWTO
 
  1. Install Pug with NPM. e.g. `$ npm install pug -g`
- 1. Place the `pug.rb` file into your Jekyll installation under `_plugins/` 
- 1. All static pages and posts ending in the extension `.pug` are now processed through Pug automatically.
- 1. Layouts need special treatment, see below.
+ 2. Install Pug Command Line with NPM e.g. '$ npm install pug-cli -g. Run '$ pug --help' to see available commands.
+ 3. Place the `pug.rb` file into your Jekyll installation under `_plugins/` 
+ 4. All static pages and posts ending in the extension `.pug` are now processed through Pug automatically.
+ 5. Layouts need special treatment, see below.
+ 
+ See https://pugjs.org (Offical site) or https://www.npmjs.com/package/pug for more details.
 
 ## Applying Pug to Layouts
 
-Unfortunately Jekyll doesn't yet allow plugins to pre-process layout files before further processing.  To write your layouts in Pug, you therefore have to render them externally.  Fortunately this only needs to be done frequently for a small period of time, during layout development.
+Unfortunately Jekyll doesn't yet allow plugins to pre-process layout files before further processing.  To write your layouts in Pug, you therefore have to render them externally.  Fortunately this only needs to be done frequently for a small period of time, during layout development. 
 
 During layout development, we recommend:
 
